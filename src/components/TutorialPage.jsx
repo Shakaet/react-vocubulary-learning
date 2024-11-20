@@ -5,12 +5,12 @@ const TutorialPage = () => {
   const navigate = useNavigate();
 
   const videos = [
-    "https://www.youtube.com/embed/video_id_1",
-    "https://www.youtube.com/embed/video_id_2",
-    "https://www.youtube.com/embed/video_id_3",
-    "https://www.youtube.com/embed/video_id_4",
-    "https://www.youtube.com/embed/video_id_5",
-    "https://www.youtube.com/embed/video_id_6",
+    "https://www.youtube.com/embed/awIXN5LgWKY?si=j-FAF4NB0st72ts5",
+    "https://www.youtube.com/embed/5WjFQieCwBM?si=EPe7S1mKG85Mjp_F",
+    "https://www.youtube.com/embed/9TxiTk669IQ?si=EKuYmYbKp9AZOIEE",
+    "https://www.youtube.com/embed/J_CgRikV-tU?si=Ye0iBG2S6GniAygg",
+    "https://www.youtube.com/embed/S0tUOS43bj0?si=Q9AS18rPxpeE18qW",
+    "https://www.youtube.com/embed/PxW9TnogX2Y?si=5PC5xRb6SjuA3ziT",
   ];
 
   return (
