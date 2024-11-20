@@ -49,7 +49,7 @@ const LearnPage = () => {
         <div className="youtube-video-container max-w-4xl mx-auto">
           <iframe
             className="w-full h-64 sm:h-80 lg:h-96"
-            src="https://www.youtube.com/embed/awIXN5LgWKY?si=j-FAF4NB0st72ts5" // Replace VIDEO_ID with your YouTube video ID
+            src="https://www.youtube.com/embed/9TxiTk669IQ?si=EKuYmYbKp9AZOIEE" // Replace VIDEO_ID with your YouTube video ID
             title="YouTube video"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

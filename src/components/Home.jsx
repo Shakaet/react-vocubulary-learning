@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import Slider from "react-slick";
 import CountUp from "react-countup";
 import "slick-carousel/slick/slick.css"; 
@@ -6,8 +6,11 @@ import "slick-carousel/slick/slick-theme.css";
 import img1 from "../assets/v1.jpeg"
 import img2 from "../assets/v2.png"
 import img3 from "../assets/v3.jpg"
+import { Context } from "./AuthProvider";
 
 const Home = () => {
+
+    let {user} = useContext(Context)
   // Slider settings
   const sliderSettings = {
     dots: true,
@@ -21,6 +24,9 @@ const Home = () => {
 
   return (
     <div className="home-page">
+        {/* {
+            user && <h1 className="text-3xl font-bold mt-5 mb-5 text-yellow-500">Welcome To {user.displayName}</h1>
+        } */}
       {/* Banner Section */}
       <section className="banner-section">
         <Slider className="rounded-lg" {...sliderSettings}>
@@ -43,7 +49,7 @@ const Home = () => {
       {/* Success Section */}
       <section className="success-section py-10 bg-blue-100">
         <h2 className="text-3xl font-bold text-center mb-8">Our Achievements</h2>
-        <div className="flex justify-around items-center">
+        <div className="md:flex justify-around items-center">
           <div className="text-center">
             <h3 className="text-5xl font-bold text-blue-500">
               <CountUp end={1000} duration={3} />+
