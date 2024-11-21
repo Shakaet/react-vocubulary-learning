@@ -34,13 +34,13 @@ const Header = () => {
         </NavLink>
       </li>
       <li>
-        <NavLink to="/about" className="hover:text-primary">
+        <NavLink to="/AboutUs" className="hover:text-primary">
           About Us
         </NavLink>
       </li>
       {user && (
         <li>
-          <NavLink to="/my-profile" className="hover:text-primary">
+          <NavLink to="/myProfile" className="hover:text-primary">
             My Profile
           </NavLink>
         </li>

@@ -10,6 +10,10 @@ import TutorialPage from './components/TutorialPage';
 import Login from './components/Login';
 import Register from './components/Register';
 import PrivateRoute from './components/PrivateRoute';
+import MyProfile from './components/MyProfile';
+import UpdateProfile from './components/UpdateProfile';
+import AboutUs from './components/AboutUs';
+import ForgetPass from './components/ForgetPass';
 
   const router = createBrowserRouter([
     {
@@ -40,7 +44,26 @@ import PrivateRoute from './components/PrivateRoute';
         {
             path:"/register",
             element:<Register></Register>
-        }
+        },
+        {
+          path:"/myProfile",
+          element:<PrivateRoute><MyProfile></MyProfile></PrivateRoute>
+      },
+      {
+        path:"/update-profile",
+        element:<UpdateProfile></UpdateProfile>
+
+      },
+      {
+        path:"/AboutUs",
+        element:<AboutUs></AboutUs>
+
+      },
+      {
+        path:"/forget-password",
+        element:<ForgetPass></ForgetPass>
+      },
+
         
 
       ]
