@@ -14,10 +14,12 @@ import MyProfile from './components/MyProfile';
 import UpdateProfile from './components/UpdateProfile';
 import AboutUs from './components/AboutUs';
 import ForgetPass from './components/ForgetPass';
+import ErrorPage from './components/ErrorPage';
 
   const router = createBrowserRouter([
     {
       path: "/",
+      errorElement: <ErrorPage></ErrorPage>,
       element: <MainLayout></MainLayout>,
       children:[
         {

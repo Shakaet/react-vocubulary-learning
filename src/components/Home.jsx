@@ -38,8 +38,8 @@ const Home = () => {
 
       {/* About Section */}
       <section className="about-section py-10 bg-gray-50 text-center">
-        <h2 className="text-3xl font-bold mb-5">Our Mission</h2>
-        <p className="text-lg max-w-2xl mx-auto">
+        <h2 className="text-3xl font-bold mb-5 animate__animated animate__backInRight">About Our Mission</h2>
+        <p className="text-lg max-w-2xl mx-auto text-3xl font-bold mb-5 animate__animated animate__backInLeft">
           Our mission is to help individuals worldwide enhance their vocabulary skills 
           through engaging lessons, practical examples, and user-friendly tutorials. 
           Start your language learning journey today!

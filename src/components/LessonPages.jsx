@@ -3,6 +3,11 @@ import { useParams, useNavigate, useLoaderData } from "react-router-dom";
 import { Dialog } from "@headlessui/react"; // For Modal
 
 const LessonPages = () => {
+  function pronounceWord(word) {
+    const utterance = new SpeechSynthesisUtterance(word);
+    utterance.lang = 'ja-JP'; // Japanese
+    window.speechSynthesis.speak(utterance);
+  }
 
     let vocabularies= useLoaderData()
   const { lesson_no } = useParams(); // Get lesson_no from the URL
@@ -36,7 +41,7 @@ const LessonPages = () => {
         <h2 className="text-2xl font-semibold text-center mb-8">Vocabularies</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
           {lessonVocabularies.map((word) => (
-            <div
+            <div onClick={() => pronounceWord(word.word)}
               key={word.id}
               className={`p-5 rounded-lg shadow-md ${
                 word.difficulty === "easy"

@@ -54,7 +54,7 @@ const Header = () => {
         {/* Logo and Welcome Message */}
         <div className="flex-1 flex flex-col items-start lg:items-center lg:flex-row">
           <a
-            className="text-2xl font-bold text-primary mb-2 lg:mb-0 lg:mr-4"
+            className="text-2xl font-bold text-primary mb-2 lg:mb-0 lg:mr-4 animate__animated animate__flip"
             href="/"
           >
             Lingo Bingo
